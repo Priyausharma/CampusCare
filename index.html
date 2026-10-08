@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CampusCare</title>
+</head>
+<body>
+    <form id="loginForm">
+        <h1>CampusCare</h1>
+        <h2>Student Academic Management System</h2>
+        <div>
+            <label for="iu">Enrollment Number:</label>
+            <input type="text" id="iu" placeholder="Enter your Enrollment Number" name="iu">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your Password" name="password">
+    </div>
+    <button type="submit">Login</button>
+    <p>Don't have an account?</p>
+    <button type="button" onclick="window.location.href='createaccount.html'">
+        Create Account
+    </button>
+    <p>
+        Faculty?
+    </p>
+    <button type="button" onclick="window.location.href='createaccountFaculty.html'">Create Account
+    </button>
+        <script src="js/script.js" defer></script>
+   </form> 
+</body>
+</html>

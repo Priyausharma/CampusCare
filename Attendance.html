@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Attendance | CampusCare</title>
+</head>
+<body>
+
+    <div id="brand_name">
+        CampusCare
+    </div>
+
+    <header>
+        <a href="Attendance.html" class="active">Attendance</a>
+        <!-- <a href="tt.html">Time Table</a> -->
+        <a href="submission.html">Submission</a>
+        <a href="event.html">Event</a>
+        <a href="notes.html">Notes</a>
+       <a href="index.html" id="logout">
+    Logout
+</a>
+    </header>
+
+    <h1>Update Attendance</h1>
+
+ <div id="contribution">
+
+    <h2>Attendance Filter</h2>
+
+    <label for="att_department">Department</label>
+
+    <select id="att_department">
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="CE">CE</option>
+        <option value="IT">IT</option>
+    </select>
+
+
+    <label for="att_semester">Semester</label>
+
+    <select id="att_semester">
+        <option value="">Select Semester</option>
+        <option value="Sem 1">Sem 1</option>
+        <option value="Sem 3">Sem 3</option>
+        <option value="Sem 5">Sem 5</option>
+        <option value="Sem 7">Sem 7</option>
+    </select>
+
+
+    <label for="att_subject">Subject</label>
+
+    <select id="att_subject">
+        <option value="">Select Subject</option>
+    </select>
+
+
+    <label for="att_date">Date</label>
+
+    <input type="date" id="att_date">
+
+
+    <button type="button" id="show_students">
+        Show Students
+    </button>
+
+</div>
+
+<div id="attendance_list">
+
+    <h2>Student Attendance</h2>
+
+    <div id="student_list">
+    </div>
+
+    <button type="button" id="attendance_update">
+        Save Attendance
+    </button>
+
+</div>
+    </div>
+
+
+    <footer>
+        <div>Learn. Grow. Achieve.</div>
+        <div>Contact:37284619640</div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>

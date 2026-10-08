@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Submission | CampusCare</title>
+</head>
+<body>
+
+    <div id="brand_name">
+        CampusCare
+    </div>
+
+    <header>
+        <a href="Attendance.html">Attendance</a>
+        <!-- <a href="tt.html">Time Table</a> -->
+        <a href="submission.html" class="active">Submission</a>
+        <a href="event.html">Event</a>
+        <a href="notes.html">Notes</a>
+        <a href="index.html" id="logout">
+    Logout
+</a>
+    </header>
+
+    <h1>Add Assignment</h1>
+
+   <div id="contribution">
+
+    <h2>Assignment Details</h2>
+
+
+    <label for="sub_department">Department</label>
+
+    <select id="sub_department">
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="CE">CE</option>
+        <option value="IT">IT</option>
+    </select>
+
+
+    <label for="sub_semester">Semester</label>
+
+    <select id="sub_semester">
+        <option value="">Select Semester</option>
+        <option value="Sem 1">Sem 1</option>
+        <option value="Sem 3">Sem 3</option>
+        <option value="Sem 5">Sem 5</option>
+        <option value="Sem 7">Sem 7</option>
+    </select>
+
+
+    <label for="sub_subject">Subject</label>
+
+    <select id="sub_subject">
+        <option value="">Select Subject</option>
+    </select>
+
+
+    <label for="sub_name">Assignment Name</label>
+
+    <input type="text"
+           id="sub_name"
+           placeholder="Enter assignment name">
+
+
+    <label for="sub_date">Submission Date</label>
+
+    <input type="date" id="sub_date">
+
+
+    <label for="sub_description">Description</label>
+
+    <input type="text"
+           id="sub_description"
+           placeholder="Enter description">
+
+
+    <button type="button" id="add_submission">
+        Add Assignment
+    </button>
+
+</div>
+    
+    <footer>
+        <div>Learn. Grow. Achieve.</div>
+        <div>Contact:37284619640</div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notes | CampusCare</title>
+</head>
+<body>
+
+    <div id="brand_name">
+        CampusCare
+    </div>
+
+    <header>
+        <a href="Attendance.html">Attendance</a>
+        <!-- <a href="tt.html">Time Table</a> -->
+        <a href="submission.html">Submission</a>
+        <a href="event.html">Event</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="index.html" id="logout">
+    Logout
+</a>
+    </header>
+
+    <h1>Upload Notes / PYQ</h1>
+
+    <div id="contribution">
+
+    <h2>Add Notes</h2>
+
+
+    <label for="notes_department">Department</label>
+
+    <select id="notes_department">
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="CE">CE</option>
+        <option value="IT">IT</option>
+    </select>
+
+
+    <label for="notes_semester">Semester</label>
+
+    <select id="notes_semester">
+        <option value="">Select Semester</option>
+        <option value="Sem 1">Sem 1</option>
+        <option value="Sem 3">Sem 3</option>
+        <option value="Sem 5">Sem 5</option>
+        <option value="Sem 7">Sem 7</option>
+    </select>
+
+
+    <label for="notes_subject">Subject</label>
+
+    <select id="notes_subject">
+        <option value="">Select Subject</option>
+    </select>
+
+
+    <label for="notes_name">Notes Name</label>
+
+    <input type="text"
+           id="notes_name"
+           placeholder="Enter notes name">
+
+<label for="notes_type">Resource Type</label>
+
+<select id="notes_type">
+    <option value="">Select Type</option>
+    <option value="Notes">Notes</option>
+    <option value="PYQ">PYQ</option>
+</select>
+    <label for="notes_file">Select File</label>
+
+    <input type="file" id="notes_file">
+
+
+    <button type="button" id="add_notes">
+        Add Notes
+    </button>
+
+</div>
+
+    <footer>
+        <div>Learn. Grow. Achieve.</div>
+        <div>Contact:37284619640</div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>

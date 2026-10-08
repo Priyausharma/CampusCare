@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resources | CampusCare</title>
+</head>
+<body>
+     <div id="brand_name">
+            CampusCare
+        </div>
+
+    <header>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="academic.html">Academic</a>
+        <a href="progress.html">Progress</a>
+        <a href="resources.html" class="active">Resources</a>
+    <a href="index.html" id="logout">
+    Logout
+</a>
+    </header>
+
+    <h1>Notes & Previous Year Papers</h1>
+<div id="com_resource"></div>
+   <div id="contribution">
+
+    <h2>Contribute Notes / PYQ</h2>
+
+
+    <label for="student_department">Department</label>
+    <select id="student_department">
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="CE">CE</option>
+        <option value="IT">IT</option>
+    </select>
+
+    <label for="student_semester">Semester</label>
+    <select id="student_semester">
+        <option value="">Select Semester</option>
+        <option value="Sem 1">Sem 1</option>
+        <option value="Sem 3">Sem 3</option>
+        <option value="Sem 5">Sem 5</option>
+        <option value="Sem 7">Sem 7</option>
+    </select>
+
+    <label for="student_subject">Subject</label>
+    <select id="student_subject">
+        <option value="">Select Subject</option>
+    </select>
+
+    <label for="student_type">Resource Type</label>
+    <select id="student_type">
+        <option value="">Select Type</option>
+        <option value="Notes">Notes</option>
+        <option value="PYQ">PYQ</option>
+    </select>
+
+    <label for="student_name">Resource Name</label>
+    <input type="text"
+           id="student_name"
+           placeholder="Enter resource name">
+
+    <label for="student_file">Select File</label>
+    <input type="file" id="student_file">
+
+    <button type="button" id="student_upload">
+        Upload
+    </button>
+
+</div>
+    </div>
+    <!-- Department Selection -->
+<div id="resource">
+        <!-- Contribution -->
+    <div class="filter">
+        <h2>Department</h2>
+        <button class="dep">CSE</button>
+        <button class="dep">CE</button>
+        <button class="dep">IT</button>
+    </div>
+
+    <!-- Semester Selection -->
+    <div class="filter">
+        <h2>Semester</h2>
+        <button class="sem">Sem 1</button>
+        <button class="sem">Sem 3</button>
+        <button class="sem">Sem 5</button>
+        <button class="sem">Sem 7</button>
+    </div>
+
+    <!-- Resource Type -->
+    <div class="filter">
+        <h2>Resource Type</h2>
+        <button class="type_reso">Notes</button>
+        <button class="type_reso">PYQ</button>
+    </div>
+
+    <!-- Resource List -->
+    <div id="resourcelist">
+        <h2>Available Resources</h2>
+
+        <div>
+            <p id="notes">TCSS</p>
+            <button>Download</button>
+        </div>
+
+        <!-- More resources will appear here later -->
+    </div>
+ 
+
+</div>
+</div>
+
+     <footer><div>
+            Learn. Grow. Achieve.</div>
+            <div>Contact:37284619640</div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

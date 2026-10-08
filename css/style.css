@@ -1,0 +1,1210 @@
+/* =====================================================
+   GENERAL PAGE
+   ===================================================== */
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #097c87;
+}
+
+
+/* =====================================================
+   CAMPUSCARE BRAND
+   ===================================================== */
+
+#brand_name {
+    text-align: center;
+    font-size: 30px;
+    background-color: #23ced9;
+    padding: 15px;
+    color: white;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+    background-color: #097c87;
+    color: white;
+}
+
+header a {
+    padding: 7px;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #feffff;
+}
+
+header a:active {
+    border-radius: 25px;
+    background-color: #feffff;
+    color: #fca47c;
+}
+
+header a.active {
+    color: #fca47c;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+   ===================================================== */
+
+header #logout {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+
+    padding: 6px 0 !important;
+    margin: 0 !important;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+    color: white;
+    background-color: #097c87;
+
+    border: 2px solid #23ced9;
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MAIN
+   ===================================================== */
+
+main {
+    flex: 1;
+}
+
+
+/* =====================================================
+   WELCOME
+   ===================================================== */
+
+#welcome {
+    color: #097c87;
+    font-size: 30px;
+    margin: 25px 20px 10px;
+}
+
+
+/* =====================================================
+   STUDENT INFORMATION
+   ===================================================== */
+
+#info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+
+#academic {
+    display: flex;
+    color: #097c87;
+    font-size: 20px;
+    margin: 5px 10px 15px;
+}
+
+
+/* =====================================================
+   MAIN DASHBOARD GRID
+   ===================================================== */
+
+#dashboard {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+
+    width: 95%;
+
+    margin: 20px auto;
+
+    box-sizing: border-box;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   DASHBOARD CARDS
+   ===================================================== */
+
+#dashboard > div {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 150px;
+
+    padding: 20px;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 10px #23ced9;
+
+    background-color: #097c87;
+
+    border-radius: 20px;
+
+    border: 2px solid #23ced9;
+
+    transition: transform 0.2s ease;
+
+    color: rgba(255, 255, 255, 0.944);
+}
+
+
+/* Dashboard headings */
+
+#dashboard > div > h3 {
+    color: #f9d779;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+    font-size: 25px;
+}
+
+
+/* Dashboard inner text */
+
+#dashboard > div p,
+#dashboard > div span,
+#dashboard > div strong {
+    color: #23ced9;
+}
+
+
+/* Hover */
+
+#dashboard > div:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   ATTENDANCE CARD
+   ===================================================== */
+
+#attendance {
+    color: white;
+}
+
+
+/* Attendance heading */
+
+#attendance h3 {
+    color: #f9d779;
+}
+
+
+/* Attendance inner information */
+
+#attendance p,
+#attendance span,
+#attendance strong {
+    color: white;
+}
+
+
+/* Attendance percentage */
+
+#attendance .percentage,
+#attendance .attendance-value {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   PROGRESS / CGPA CARD
+   ===================================================== */
+
+#progress {
+    width: 100%;
+    color: white;
+}
+
+
+/* CGPA heading */
+
+#progress h3 {
+    color: #f9d779;
+}
+
+
+/* CGPA text */
+
+#progress p,
+#progress span,
+#progress strong {
+    color: white;
+}
+
+
+/* CGPA value */
+
+#progress .cgpa,
+#progress .cgpa-value {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SUBMISSIONS SECTION
+   ===================================================== */
+
+#submission {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+
+/* Submissions heading */
+
+#submission > h3 {
+    color: #f9d779;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+
+/* Submission cards */
+
+#submission > div {
+    width: 100%;
+
+    min-height: 120px;
+
+    height: auto;
+
+    margin: 0 0 15px 0;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    /* LIGHT YELLOW - easy to see */
+    background-color: #fff3cd;
+
+    border: 2px solid #f0c36d;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 8px #f0c36d;
+
+    color: #097c87;
+}
+
+
+/* Assignment title */
+
+#submission h4 {
+    color: #097c87;
+
+    margin: 0 0 10px 0;
+
+    font-size: 21px;
+}
+
+
+/* Assignment information */
+
+#submission p {
+    color: #097c87;
+
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   EVENTS
+   ===================================================== */
+
+#eventList {
+    width: 95%;
+
+    margin: 20px auto;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+
+/* Today's Events heading */
+
+#eventList > h3 {
+    color: #097c87;
+
+    margin: 0 0 20px 0;
+
+    font-size: 28px;
+}
+
+
+/* Event cards */
+
+#eventList > div {
+    width: 100%;
+
+    min-height: 120px;
+
+    height: auto;
+
+    margin: 0 0 20px 0;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    /* LIGHT BLUE - clearly different */
+    background-color: #e8f4ff;
+
+    border: 2px solid #64b5e8;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 8px #64b5e8;
+
+    color: #097c87;
+}
+
+
+/* Event title */
+
+#eventList h4 {
+    color: #097c87;
+
+    margin: 0 0 10px 0;
+
+    font-size: 22px;
+}
+
+
+/* Event information */
+
+#eventList p {
+    color: #097c87;
+
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   EVENT CARD
+   ===================================================== */
+
+.event-card {
+    width: 100%;
+
+    min-height: 120px;
+
+    height: auto;
+
+    margin: 0 0 20px 0;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background-color: #e8f4ff;
+
+    border: 2px solid #64b5e8;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 8px #64b5e8;
+
+    color: #097c87;
+}
+
+.event-card h4 {
+    color: #097c87;
+
+    margin: 0 0 10px 0;
+}
+
+.event-card p {
+    color: #097c87;
+
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   TABLE
+   ===================================================== */
+
+table {
+    color: white;
+
+    background-color: #097c87;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 0px 10px #23ced9;
+
+    border: 2px solid #23ced9;
+
+    padding: 10px;
+}
+
+table td,
+table th {
+    padding: 10px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 5px;
+
+    color: white;
+}
+
+table th:hover,
+table td:hover {
+    color: #fca47c;
+}
+
+
+/* =====================================================
+   RESOURCES
+   ===================================================== */
+
+#resource {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    text-align: center;
+
+    color: white;
+
+    margin: 20px;
+}
+
+#resource > div {
+    box-shadow: 0px 0px 10px #23ced9;
+
+    background-color: #097c87;
+
+    border-radius: 25px;
+
+    border: 2px solid #23ced9;
+
+    transition: transform 0.2s ease;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    color: white;
+}
+
+#resource > div:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =====================================================
+   RESOURCE LIST
+   ===================================================== */
+
+#resourcelist {
+    grid-column: 1 / -1;
+
+    width: 325px;
+
+    max-width: 90%;
+
+    margin: 20px auto 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+button {
+    font-size: 10px;
+
+    width: 20%;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: #fca47c;
+
+    background-color: #097c87;
+
+    border-radius: 25px;
+
+    border: 2px solid #23ced9;
+}
+
+button:active {
+    background-color: #feffff;
+}
+
+
+/* =====================================================
+   CONTRIBUTION / FACULTY FORMS
+   ===================================================== */
+
+#contribution {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 90%;
+
+    max-width: 600px;
+
+    box-sizing: border-box;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    box-shadow: 0px 0px 10px #23ced9;
+
+    background-color: #097c87;
+
+    border-radius: 25px;
+
+    border: 2px solid #23ced9;
+
+    transition: transform 0.2s ease;
+
+    color: white;
+}
+
+#contribution h2 {
+    text-align: center;
+    color: #f9d779;
+}
+
+#contribution label {
+    display: block;
+
+    width: 95%;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+#contribution input {
+    width: 95%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 8px;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 16px;
+}
+
+#contribution input:focus {
+    outline: none;
+
+    border-color: #fca47c;
+}
+
+#contribution select {
+    width: 95%;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 8px;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 16px;
+
+    background-color: white;
+}
+
+#contribution select:focus {
+    outline: none;
+
+    border-color: #fca47c;
+}
+
+#contribution textarea {
+    width: 95%;
+
+    min-height: 100px;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 8px;
+
+    font-family: "Times New Roman", Times, serif;
+
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+#contribution textarea:focus {
+    outline: none;
+
+    border-color: #fca47c;
+}
+
+#contribution button {
+    width: auto;
+
+    margin: 20px auto 5px;
+
+    padding: 10px 25px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 8px;
+
+    background-color: #097c87;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#contribution button:hover {
+    background-color: white;
+
+    color: #097c87;
+}
+
+
+/* =====================================================
+   LOGIN / CREATE ACCOUNT FORM
+   ===================================================== */
+
+body:has(form) {
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+form {
+    width: 380px;
+
+    max-width: 90%;
+
+    box-sizing: border-box;
+
+    padding: 35px;
+
+    background-color: #097c87;
+
+    color: white;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 0px 15px #23ced9;
+
+    text-align: center;
+}
+
+form h1 {
+    margin: 0 0 8px;
+
+    font-size: 38px;
+
+    color: white;
+}
+
+form h2 {
+    margin: 0 0 30px;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    color: #f9d779;
+}
+
+form div {
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 18px;
+
+    color: white;
+}
+
+form input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 13px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 16px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #097c87;
+}
+
+form input:focus {
+    border-color: #fca47c;
+
+    box-shadow: 0px 0px 7px #23ced9;
+}
+
+form input::placeholder {
+    color: #777;
+}
+
+
+/* Select */
+
+form select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 13px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 16px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #097c87;
+
+    cursor: pointer;
+}
+
+form select:focus {
+    border-color: #fca47c;
+
+    box-shadow: 0px 0px 7px #23ced9;
+}
+
+
+/* Form button */
+
+form button {
+    width: 45%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+    margin-bottom: 0;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 18px;
+
+    color: white;
+
+    background-color: #097c87;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: white;
+
+    color: #097c87;
+}
+
+form button:active {
+    background-color: #fca47c;
+
+    color: white;
+}
+
+
+/* =====================================================
+   FACULTY ATTENDANCE
+   ===================================================== */
+
+#attendance_list {
+    width: 80%;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 10px #23ced9;
+}
+
+#attendance_list h2 {
+    text-align: center;
+
+    color: #097c87;
+}
+
+.student_attendance {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 15px 0;
+
+    padding: 12px;
+
+    border: 1px solid #23ced9;
+
+    border-radius: 10px;
+}
+
+.student_attendance p {
+    width: 220px;
+
+    margin: 0;
+
+    font-weight: bold;
+}
+
+.student_attendance button {
+    padding: 8px 18px;
+
+    border: 2px solid #23ced9;
+
+    border-radius: 8px;
+
+    background-color: #097c87;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.student_attendance button:hover {
+    background-color: white;
+
+    color: #097c87;
+}
+
+#attendance_list > button {
+    display: block;
+
+    margin: 25px auto 5px;
+
+    padding: 10px 25px;
+
+    border: 2px solid #fca47c;
+
+    border-radius: 8px;
+
+    background-color: #097c87;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#attendance_list > button:hover {
+    background-color: white;
+
+    color: #097c87;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: auto;
+
+    padding: 10px;
+
+    background-color: #097c87;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    #dashboard {
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 92%;
+
+        gap: 20px;
+    }
+
+    #resource {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #eventList {
+        width: 92%;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    #brand_name {
+        font-size: 26px;
+    }
+
+    header {
+        justify-content: center;
+
+        gap: 5px;
+
+        padding: 10px;
+    }
+
+    header a {
+        margin: 0 8px;
+
+        padding: 7px;
+    }
+
+
+    /* Dashboard becomes one column */
+
+    #dashboard {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        width: 92%;
+
+        margin: 10px auto;
+    }
+
+
+    #dashboard > div {
+        min-height: 130px;
+
+        padding: 15px;
+    }
+
+
+    /* Resources */
+
+    #resource {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin: 15px;
+    }
+
+
+    #resourcelist {
+        width: 90%;
+    }
+
+
+    /* Contribution */
+
+    #contribution {
+        width: 92%;
+
+        padding: 15px;
+
+        margin: 20px auto;
+    }
+
+    #contribution label,
+    #contribution input,
+    #contribution select,
+    #contribution textarea {
+        width: 100%;
+    }
+
+    #contribution button {
+        width: auto;
+    }
+
+
+    /* Tables */
+
+    table {
+        max-width: 100%;
+
+        overflow-x: auto;
+
+        display: block;
+    }
+
+
+    /* Attendance */
+
+    #attendance_list {
+        width: 90%;
+
+        box-sizing: border-box;
+
+        padding: 15px;
+    }
+
+    .student_attendance {
+        flex-direction: column;
+    }
+
+    .student_attendance p {
+        width: auto;
+
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    /* Form */
+
+    form {
+        width: 90%;
+
+        padding: 25px;
+    }
+
+    form h1 {
+        font-size: 32px;
+    }
+
+    form button {
+        width: 60%;
+    }
+
+
+    /* Events */
+
+    #eventList {
+        width: 92%;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Account - CampusCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<form id="createAccountForm">
+
+    <h1>CampusCare</h1>
+    <h2>Create Account</h2>
+
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <div>
+        <label for="newIU">Enrollment Number:</label>
+        <input type="text" id="newIU" placeholder="Enter your Enrollment Number">
+    </div>
+
+    <div>
+        <label for="email">Official Email:</label>
+        <input type="email" id="email" placeholder="Enter your college email">
+    </div>
+
+    <div>
+        <label for="division">Division:</label>
+        <input type="text" id="division" placeholder="Enter your division">
+    </div>
+
+    <div>
+        <label for="department">Department:</label>
+
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="CE">CE</option>
+            <option value="IT">IT</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="semester">Semester:</label>
+
+        <select id="semester" name="semester" required>
+            <option value="">Select Semester</option>
+            <option value="Sem 1">Sem 1</option>
+            <option value="Sem 3">Sem 3</option>
+            <option value="Sem 5">Sem 5</option>
+            <option value="Sem 7">Sem 7</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword" placeholder="Create a password">
+    </div>
+
+    <button type="submit">Create Account</button>
+
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
